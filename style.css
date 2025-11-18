@@ -830,3 +830,70 @@ section {
     padding-left: 18px;
   }
 }
+/**/
+/* ============= ريسبونسيف قسم التعليم 100% شغال على كل الموبايلات ============= */
+.edu-container {
+    min-width: 0 !important;     /* أهم سطر عشان يلغي الـ 900px القديمة */
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/* للشاشات المتوسطة */
+@media screen and (max-width: 768px) {
+    .edu-timeline {
+        padding-left: 30px;
+    }
+    .edu-timeline::before {
+        left: 11px;
+        width: 2px;
+    }
+    .edu-item {
+        padding-left: 35px;
+        margin-bottom: 70px;
+    }
+    .edu-item::before {
+        width: 16px;
+        height: 16px;
+        left: 3px;
+        border-width: 4px;
+    }
+    .edu-degree,
+    .edu-Courses {
+        font-size: 1.5rem;
+    }
+}
+
+/* للموبايل الصغير جدًا */
+@media screen and (max-width: 480px) {
+    .edu-container {
+        padding: 0 10px;
+    }
+    .section-title h2 {
+        font-size: 1.8rem !important;
+        text-align: center;
+    }
+    .edu-timeline {
+        padding-left: 20px;
+    }
+    .edu-timeline::before {
+        left: 7px;
+    }
+    .edu-item {
+        padding-left: 28px;
+    }
+    .edu-item::before {
+        width: 14px;
+        height: 14px;
+        left: 0;
+    }
+    .edu-degree,
+    .edu-Courses {
+        font-size: 1.35rem;
+    }
+    .edu-year {
+        font-size: 0.9rem;
+    }
+}
