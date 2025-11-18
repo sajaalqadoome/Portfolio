@@ -747,172 +747,86 @@ section {
   }
 }
 
-@media screen and (max-width: 600px) {
-  .edu-item {
-    display: flex;
-    flex-direction: column;
-    padding-left: 0;
-    margin-bottom: 40px;
-  }
-
-  .edu-item::before {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 10px;
-    height: 10px;
-    border: 2px solid #000;
-    margin-bottom: 8px;
-  }
-
-  .edu-info {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-  }
-
-  .edu-year {
-    font-size: 0.8rem;
-  }
-
-  .edu-degree, .edu-Courses {
-    font-size: 1.2rem;
-  }
-
-  .edu-university {
-    font-size: 0.95rem;
-  }
-
-  .edu-Detlis p {
-    font-size: 0.9rem;
-    margin-bottom: 6px;
-  }
 }
-}
-@media screen and (max-width: 600px) {
-  .edu-container {
-    padding: 0;
-  }
 
+
+/* ================== Responsive Education Only ================== */
+@media (max-width: 768px) {
   .edu-timeline {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding-left: 0;
+    padding-left: 30px;
   }
-
-  .edu-item {
-    background-color: #161616;
-    border: 1px solid #b74b4b;
-    border-radius: 12px;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .edu-year {
-    font-size: 0.8rem;
-    color: #b74b4b;
-    font-weight: 600;
-  }
-
-  .edu-degree {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #fff;
-  }
-
-  .edu-university {
-    font-size: 1rem;
-    color: #aaa;
-  }
-
-  .edu-Courses {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #b74b4b;
-    margin-top: 10px;
-  }
-
-  .edu-Detlis {
-    background-color: #1a1a1a;
-    border-radius: 8px;
-    padding: 10px;
-  }
-
-  .edu-Detlis p {
-    font-size: 0.95rem;
-    margin: 4px 0;
-    line-height: 1.4;
-  }
-}
-
-
-/* Education Responsive للجوال */
-@media screen and (max-width: 600px) {
-  .edu-container {
-    padding: 0;
-  }
-
-  .edu-timeline {
-    padding-left: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
+  
   .edu-timeline::before {
-    display: none; /* نخفي الخط العمودي */
+    left: 11px;
+    width: 2px;
   }
-
+  
   .edu-item {
-    background-color: #161616;
-    border: 1px solid #b74b4b;
-    border-radius: 12px;
-    padding: 1px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    position: relative;
+    padding-left: 35px;
+    margin-bottom: 70px;
   }
-
+  
   .edu-item::before {
-    display: none; /* نخفي الدائرة الصغيرة */
+    width: 16px;
+    height: 16px;
+    left: 3px;
+    border-width: 4px;
   }
+  
+  .edu-degree,
+  .edu-Courses {
+    font-size: 1.5rem;
+  }
+  
+  .edu-university {
+    font-size: 1.1rem;
+  }
+  
+  .edu-Detlis p {
+    font-size: 1rem;
+  }
+}
 
+@media (max-width: 480px) {
+  .section-title h2 {
+    font-size: 1.7rem;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  
+  .edu-timeline {
+    padding-left: 25px;
+  }
+  
+  .edu-timeline::before {
+    left: 8px;
+  }
+  
+  .edu-item {
+    padding-left: 30px;
+  }
+  
+  .edu-item::before {
+    width: 14px;
+    height: 14px;
+    left: 1px;
+  }
+  
   .edu-year {
-    font-size: 0.8rem;
-    color: #b74b4b;
-    font-weight: 600;
+    font-size: 0.9rem;
   }
-
-  .edu-degree {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #fff;
+  
+  .edu-degree,
+  .edu-Courses {
+    font-size: 1.35rem;
   }
-
+  
   .edu-university {
     font-size: 1rem;
-    color: #aaa;
   }
-
-  .edu-Courses {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #b74b4b;
-    margin-top: 10px;
-  }
-
-  .edu-Detlis {
-    background-color: #1a1a1a;
-    border-radius: 8px;
-    padding: 10px;
-  }
-
+  
   .edu-Detlis p {
     font-size: 0.95rem;
-    margin: 4px 0;
-    line-height: 1.4;
+    padding-left: 18px;
   }
 }
