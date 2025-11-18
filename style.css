@@ -713,131 +713,62 @@ section {
   }
 }
 /* ريسبونسيف لقسم التعليم */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
   .edu-container {
-    min-width: auto;
     padding: 0 15px;
   }
 
   .edu-timeline {
-    padding-left: 20px;
+    padding-left: 0;
   }
 
   .edu-timeline::before {
-    left: 8px;
+    display: none; /* نلغي الخط الطويل */
   }
 
   .edu-item {
-    padding-left: 40px;
-    margin-bottom: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 12px; /* المسافة بين الدائرة والنص */
+    margin-bottom: 30px;
+    width: 100%;
+    padding-left: 0;
   }
 
   .edu-item::before {
-    left: -4px;
     width: 12px;
     height: 12px;
-    border: 3px solid #000;
-  }
-
-  .edu-year {
-    font-size: 0.9rem;
-  }
-
-  .edu-degree, .edu-Courses {
-    font-size: 1.4rem;
-  }
-
-  .edu-university {
-    font-size: 1rem;
-  }
-
-  .edu-Detlis p {
-    font-size: 1rem;
-    padding-left: 15px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .edu-timeline {
-    padding-left: 15px;
-  }
-
-  .edu-item {
-    padding-left: 30px;
-    margin-bottom: 50px;
-  }
-
-  .edu-item::before {
-    left: -6px;
-    width: 10px;
-    height: 10px;
-    border: 2px solid #000;
-  }
-
-  .edu-year {
-    font-size: 0.8rem;
-  }
-
-  .edu-degree, .edu-Courses {
-    font-size: 1.2rem;
-  }
-
-  .edu-university {
-    font-size: 0.95rem;
-  }
-
-  .edu-Detlis p {
-    font-size: 0.95rem;
-    padding-left: 10px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .edu-container {
-    padding: 0 15px;
-  }
-
-  .edu-timeline {
-    padding-left: 0;
-  }
-
-  .edu-timeline::before {
-    display: none; /* نخفي الخط الطويل */
-  }
-
-  .edu-item {
-    padding-left: 0;
-    margin-bottom: 40px;
-    display: flex;
-    align-items: flex-start;
-    gap: 15px; /* المسافة بين الدائرة والنص */
-  }
-
-  .edu-item::before {
+    border: 2px solid #b74b4b;
+    border-radius: 50%;
     position: relative;
-    top: 0;
+    top: 5px;
     left: 0;
-    width: 14px;
-    height: 14px;
-    border: 3px solid #000;
-    margin-top: 6px;
     box-shadow: none;
   }
 
   .edu-year {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+    color: #b74b4b;
+    font-weight: 600;
   }
 
   .edu-degree, .edu-Courses {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.3;
   }
 
   .edu-university {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    color: #aaa;
   }
 
   .edu-Detlis p {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
     padding-left: 0;
-    margin-bottom: 10px;
   }
 }
+
