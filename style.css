@@ -32,7 +32,7 @@ header
 }
 
 header .logo {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #b74b4b;
   font-weight: 800;
   cursor: pointer;
@@ -42,8 +42,12 @@ nav a {
   color: white;
   text-decoration: none;
   margin-left: 3rem;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 nav a:hover, nav a.active {
   color: #b74b4b;
@@ -79,7 +83,11 @@ section {
     flex-direction: column;
     padding: 20px 30px;
     border-radius: 10px;
-  }
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
 
   #menu-toggle:checked + .menu-toggle + nav {
     display: flex;
@@ -182,14 +190,21 @@ section {
       -moz-border-radius: 50px;
       -ms-border-radius: 50px;
       -o-border-radius: 50px;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
 }
     .btn-downlode .btn:hover {
       background:white;
       color: #b74b4b;
-      font-size: 50px;
       transform: translateY(-4px);
       box-shadow: 0 10px 20px rgba(255, 51, 51, 0.25);
-    }
+      -webkit-transform: translateY(-4px);
+      -moz-transform: translateY(-4px);
+      -ms-transform: translateY(-4px);
+      -o-transform: translateY(-4px);
+}
 @media (max-width: 900px) {
   .home-container {
     flex-wrap: nowrap; 
@@ -197,33 +212,9 @@ section {
 }
 
 
-.skills-wrapper
-{
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 60px;
-  margin-top: 60px;
-}
-.skills-box h3{
-   margin-bottom: 15px;
-   font-size: 26px;
-   font-weight: bold;
-   color:#b74b4b;
-}
-.skills-box ul li{
-   margin-bottom: 8px;
-   font-size: 18px;
-  
-}
 
-.vertical-line {
-    width: 4px;
-    height: 220px;
-    background:rgb(183, 75, 75);
-    margin-top: 10px;
-}
-#project{}
+/*
+#project{}/*/
 .contaner {
       max-width: 1800px;
       margin: 0 auto;
@@ -234,8 +225,6 @@ section {
       font-size: 4.8rem;
       font-weight: 800;
       margin-bottom: 120px;
-      background: linear-gradient(90deg, #ff6b6b, #f94d6a, #b74b4b, #8e2de2);
-
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -245,9 +234,9 @@ section {
 .project-grid
 {
     display: grid;
-grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 40px;
-   align-items:stretch ;
+    align-items:stretch ;
 }
 .project
 {
@@ -277,8 +266,17 @@ grid-template-columns: repeat(4, 1fr);
       z-index: -1;
       opacity: 0;
       transition: opacity 0.5s;
-   background: linear-gradient(45deg, #ff6b6b, #f94d6a, #b74b4b, #8e2de2, #4facfe);
-    filter: blur(20px);
+      background: linear-gradient(45deg, #ff6b6b, #f94d6a, #b74b4b, #8e2de2, #4facfe);
+      filter: blur(20px);
+      -webkit-border-radius: 32px;
+      -moz-border-radius: 32px;
+      -ms-border-radius: 32px;
+      -o-border-radius: 32px;
+      -webkit-transition: opacity 0.5s;
+      -moz-transition: opacity 0.5s;
+      -ms-transition: opacity 0.5s;
+      -o-transition: opacity 0.5s;
+      -webkit-filter: blur(20px);
 }
 .project:hover::before { opacity: 1; }
 .project h2 {
@@ -307,9 +305,17 @@ grid-template-columns: repeat(4, 1fr);
 .icons-skill i {
     font-size: 2.6rem;
     transition: transform 0.3s ease;
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -ms-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
 }
 .icons-skill i:hover {
     transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
 }
 #Experince {
   margin-top: 50px;
@@ -327,10 +333,7 @@ grid-template-columns: repeat(4, 1fr);
   padding: 20px;
   border-radius: 8px;
   border-left: 8px solid #b74b4b;
-  -webkit-border-radius:;
-  -moz-border-radius:;
-  -ms-border-radius:;
-  -o-border-radius:;
+
 }
 
 .experience-item h3 {
@@ -348,7 +351,7 @@ grid-template-columns: repeat(4, 1fr);
   margin-top: 5px;
   font-size:medium;
 }
-#education{}
+/*#education{}*/
 
 .edu-container{
  min-width: 900px;
@@ -356,10 +359,10 @@ grid-template-columns: repeat(4, 1fr);
  padding: 0 20px;
 }
 
-.section-title {
-      font-size: clamp(2.8rem, 6vw, 4rem);
+.section-title h2{
+      font-size: 2rem;
       font-weight: 700;
-      text-align: center;
+      text-align:left;
       margin-bottom: 100px;
       color: #fff;
       letter-spacing: -1px;
@@ -438,7 +441,7 @@ grid-template-columns: repeat(4, 1fr);
       padding-left: 20px;
       margin-bottom: 14px;
     }
-    .edu-Detlis ::before p{
+    .edu-Detlis::before p{
       content: '*';
       color: #b74b4b;
       position: absolute;
@@ -447,11 +450,12 @@ grid-template-columns: repeat(4, 1fr);
     }
 
 
-#conract-me{}
+/*#conract-me{}*/
 .contact
 {
     display: flex;
     justify-content:center;
+   
 }
 .icon-conract
 {
@@ -467,10 +471,27 @@ grid-template-columns: repeat(4, 1fr);
     border: 2px solid #b74b4b;
     padding: 20px;
     border-radius: 50%;
-  color: white;
-  font-size: 35px;
+    color: white;
+    font-size: 35px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
+.icon-conract p
+{
+    text-decoration: none;
+    color: white;
+display: none;
 
+
+}
+.icon-conract p:hover
+{
+   display: inline;
+    
+
+}
 .icon-conract i:hover
 {
  background-color: #b74b4b;
@@ -479,6 +500,7 @@ grid-template-columns: repeat(4, 1fr);
  -moz-transform: scale(1.3);
  -ms-transform: scale(1.3);
  -o-transform: scale(1.3);
+ 
 }
 .section-title
 {
@@ -505,22 +527,6 @@ grid-template-columns: repeat(4, 1fr);
       padding-bottom: 12px;
 }
 
-.tec-skill h3::after,
-.soft-skills h3::after
-{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 90px;
-    height: 5px;
-    background: linear-gradient(90deg, #b74b4b, transparent);
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
-}
 .tec-skill .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -542,7 +548,7 @@ grid-template-columns: repeat(4, 1fr);
 .skill-card:hover {
       transform: translateY(-15px);
       background: #1a1a1a;
-      box-shadow: 0 20px 40px #b74b4b;
+      box-shadow: 0 10px 10px #b74b4b;
       border-color: #b74b4b;
       -webkit-transform: translateY(-15px);
       -moz-transform: translateY(-15px);
@@ -558,7 +564,6 @@ grid-template-columns: repeat(4, 1fr);
       -ms-transition: transform 0.3s ease;
       -o-transition: transform 0.3s ease;
 }
-    .skill-card:hover i { transform: scale(1.15); -webkit-transform: scale(1.15); -moz-transform: scale(1.15); -ms-transform: scale(1.15); -o-transform: scale(1.15); }
     .skill-card p {
       font-size: 1.1rem;
       color: #eee;
@@ -578,14 +583,8 @@ grid-template-columns: repeat(4, 1fr);
       -ms-transition: all 0.4s ease;
       -o-transition: all 0.4s ease;
 }
-    .soft-skills li:hover {
-      color: #ff6666;
-      transform: translateX(12px);
-      -webkit-transform: translateX(12px);
-      -moz-transform: translateX(12px);
-      -ms-transform: translateX(12px);
-      -o-transform: translateX(12px);
-}
+
+
     .soft-skills li::before {
       content: '*';
       position: absolute;
@@ -609,7 +608,7 @@ grid-template-columns: repeat(4, 1fr);
     }
 
     .project-grid {
-        grid-template-columns: repeat(2, 1fr); /* عمودين على التابلت */
+        grid-template-columns: repeat(2, 1fr); 
         gap: 30px;
     }
 
@@ -619,7 +618,7 @@ grid-template-columns: repeat(4, 1fr);
 }
 
 @media (max-width: 768px) {
-    .contaner {             /* أو .container */
+    .contaner {         
         padding: 0 20px;
     }
 
@@ -629,7 +628,7 @@ grid-template-columns: repeat(4, 1fr);
     }
 
     .project-grid {
-        grid-template-columns: 1fr; /* عمود واحد على الموبايل */
+        grid-template-columns: 1fr; 
         gap: 40px;
     }
 
@@ -666,3 +665,4 @@ grid-template-columns: repeat(4, 1fr);
 
     .project h2 {
         font-size: 1.35}}
+    
