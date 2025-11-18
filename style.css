@@ -791,3 +791,53 @@ section {
     padding-left: 10px;
   }
 }
+@media screen and (max-width: 600px) {
+  .edu-container {
+    padding: 0 15px;
+  }
+
+  .edu-timeline {
+    padding-left: 0;
+  }
+
+  .edu-timeline::before {
+    display: none; /* نخفي الخط الطويل */
+  }
+
+  .edu-item {
+    padding-left: 0;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px; /* المسافة بين الدائرة والنص */
+  }
+
+  .edu-item::before {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    border: 3px solid #000;
+    margin-top: 6px;
+    box-shadow: none;
+  }
+
+  .edu-year {
+    font-size: 0.8rem;
+  }
+
+  .edu-degree, .edu-Courses {
+    font-size: 1.2rem;
+  }
+
+  .edu-university {
+    font-size: 1rem;
+  }
+
+  .edu-Detlis p {
+    font-size: 0.95rem;
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
+}
