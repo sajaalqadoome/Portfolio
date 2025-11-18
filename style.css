@@ -789,10 +789,9 @@ section {
   }
 }
 }
-/* Education Responsive مثل قسم الخبرة */
 @media screen and (max-width: 600px) {
   .edu-container {
-    padding: 0 15px;
+    padding: 0;
   }
 
   .edu-timeline {
@@ -853,10 +852,9 @@ section {
 /* Education Responsive للجوال */
 @media screen and (max-width: 600px) {
   .edu-container {
-    padding: 0 15px;
+    padding: 0;
   }
 
-  /* نحول timeline لعمودي بدون الخط */
   .edu-timeline {
     padding-left: 0;
     display: flex;
@@ -871,7 +869,7 @@ section {
     background-color: #161616;
     border: 1px solid #b74b4b;
     border-radius: 12px;
-    padding: 15px;
+    padding: 1px;
     display: flex;
     flex-direction: column;
     gap: 8px;
