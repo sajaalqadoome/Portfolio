@@ -711,64 +711,81 @@ section {
     font-size: 28px;
     padding: 14px;
   }
-}
-/* ريسبونسيف لقسم التعليم */
-@media screen and (max-width: 600px) {
+
+/* ريسبونسيف Education */
+@media screen and (max-width: 900px) {
   .edu-container {
-    padding: 0 15px;
-  }
-
-  .edu-timeline {
-    padding-left: 0;
-  }
-
-  .edu-timeline::before {
-    display: none; /* نلغي الخط الطويل */
+    padding: 0 20px;
   }
 
   .edu-item {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 12px; /* المسافة بين الدائرة والنص */
-    margin-bottom: 30px;
-    width: 100%;
-    padding-left: 0;
+    padding-left: 30px; /* تقليل المسافة الداخلية */
+    margin-bottom: 60px;
   }
 
   .edu-item::before {
     width: 12px;
     height: 12px;
-    border: 2px solid #b74b4b;
-    border-radius: 50%;
-    position: relative;
-    top: 5px;
-    left: 0;
+    border: 3px solid #000;
     box-shadow: none;
   }
 
   .edu-year {
-    font-size: 0.75rem;
-    color: #b74b4b;
-    font-weight: 600;
+    font-size: 0.9rem;
   }
 
   .edu-degree, .edu-Courses {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #fff;
-    line-height: 1.3;
+    font-size: 1.4rem;
+  }
+
+  .edu-university {
+    font-size: 1rem;
+  }
+
+  .edu-Detlis p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .edu-item {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 40px;
+  }
+
+  .edu-item::before {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #000;
+    margin-bottom: 8px;
+  }
+
+  .edu-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .edu-year {
+    font-size: 0.8rem;
+  }
+
+  .edu-degree, .edu-Courses {
+    font-size: 1.2rem;
   }
 
   .edu-university {
     font-size: 0.95rem;
-    color: #aaa;
   }
 
   .edu-Detlis p {
     font-size: 0.9rem;
-    margin-bottom: 8px;
-    padding-left: 0;
+    margin-bottom: 6px;
   }
 }
-
+}
