@@ -789,3 +789,45 @@ section {
   }
 }
 }
+@media screen and (max-width: 600px) {
+  .edu-item-box {
+    background-color: #161616;
+    border: 1px solid #b74b4b;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .edu-header {
+    margin-bottom: 10px;
+  }
+
+  .edu-year {
+    font-size: 0.8rem;
+    color: #b74b4b;
+    font-weight: 600;
+  }
+
+  .edu-degree {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .edu-university {
+    font-size: 1rem;
+    color: #aaa;
+  }
+
+  .edu-courses-box {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    padding: 8px 10px;
+  }
+
+  .edu-courses-box p {
+    font-size: 0.95rem;
+    margin: 4px 0;
+  }
+}
+
